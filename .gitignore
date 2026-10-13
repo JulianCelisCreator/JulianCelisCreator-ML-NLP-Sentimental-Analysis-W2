@@ -18,6 +18,7 @@ CLAUDE.md
 ## Data: copied from Workshop #1 and verified by hash (see README, "Data")
 data/*
 
-## Checkpoints are ~440 MB, over GitHub's 100 MB limit. Hosting is undecided
-## (Git LFS / Hugging Face Hub / Release); until then they stay local.
+## Checkpoints (~0.5 GB) go through Git LFS (.gitattributes). Only the final model is
+## pushed; alternatives such as bert_best.pt stay local to save LFS quota.
 checkpoints/*.pt
+!checkpoints/model_best.pt

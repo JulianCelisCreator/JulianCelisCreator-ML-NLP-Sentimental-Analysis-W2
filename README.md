@@ -20,7 +20,7 @@ src/
 ├── evaluate.py     test-set (or validation) metrics from the checkpoint
 └── test_model.py   loads the checkpoint and classifies new reviews
 scripts/train_tty.sh   launches training from a text console (see "GPU" below)
-checkpoints/        model_best.pt (local only, ~440 MB)
+checkpoints/        model_best.pt — final RoBERTa model, ~499 MB, via Git LFS
 runs/               TensorBoard logs, history.json, eval_<split>_<checkpoint>.json
 notebooks/          experimentation
 data/               silver + gold copied from Workshop #1 (gitignored)
@@ -29,7 +29,12 @@ reports/            the workshop briefs
 
 ## Setup
 
-Python 3.12–3.14 and Poetry.
+Python 3.12–3.14, Poetry, and **Git LFS** (the checkpoint is stored with it):
+
+```bash
+git lfs install            # once per machine, before cloning
+git clone git@github.com:JulianCelisCreator/ML-NLP-Sentimental-Analysis-W2.git
+```
 
 ```bash
 # AMD GPU (ROCm 7.2) — the configuration the results were produced on:
