@@ -1,0 +1,31 @@
+{
+  "split": "test",
+  "model": "roberta-base",
+  "checkpoint": "model_best.pt",
+  "best_epoch": 4,
+  "accuracy": 0.8459734167318217,
+  "macro_f1": 0.7129705498929318,
+  "auc_roc": 0.93565192943344,
+  "recall": {
+    "negative": 0.7261029411764706,
+    "neutral": 0.6475195822454308,
+    "positive": 0.8886922320550639
+  },
+  "confusion": [
+    [
+      395,
+      139,
+      10
+    ],
+    [
+      168,
+      496,
+      102
+    ],
+    [
+      25,
+      541,
+      4519
+    ]
+  ]
+}

@@ -1,0 +1,23 @@
+## Secrets — never commit
+.env*
+*.env
+
+## Python
+*.pyc
+__pycache__/
+.venv/
+
+## Editor / OS
+.vscode/
+.DS_Store
+
+## Claude Code config — local only, as in Workshop #1
+.claude/
+CLAUDE.md
+
+## Data: copied from Workshop #1 and verified by hash (see README, "Data")
+data/*
+
+## Checkpoints are ~440 MB, over GitHub's 100 MB limit. Hosting is undecided
+## (Git LFS / Hugging Face Hub / Release); until then they stay local.
+checkpoints/*.pt

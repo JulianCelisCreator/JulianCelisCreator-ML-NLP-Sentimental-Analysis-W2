@@ -1,0 +1,155 @@
+{
+  "run": "roberta-base",
+  "best_epoch": 4,
+  "best_val_macro_f1": 0.7349560295089161,
+  "minutes": 25.2,
+  "history": [
+    {
+      "epoch": 1,
+      "phase": "frozen",
+      "train_loss": 1.0438506497222115,
+      "val_loss": 1.0102921258294089,
+      "minutes": 2.93,
+      "accuracy": 0.8120406567630961,
+      "macro_f1": 0.6165916990745582,
+      "auc_roc": 0.8676913498521257,
+      "recall": {
+        "negative": 0.6998158379373849,
+        "neutral": 0.3720626631853786,
+        "positive": 0.8902870625245772
+      },
+      "confusion": [
+        [
+          380,
+          101,
+          62
+        ],
+        [
+          224,
+          285,
+          257
+        ],
+        [
+          223,
+          335,
+          4528
+        ]
+      ]
+    },
+    {
+      "epoch": 2,
+      "phase": "finetune",
+      "train_loss": 0.6409284404296273,
+      "val_loss": 0.5232850232098232,
+      "minutes": 7.41,
+      "accuracy": 0.8511336982017201,
+      "macro_f1": 0.7305161989870581,
+      "auc_roc": 0.9469336878049689,
+      "recall": {
+        "negative": 0.7274401473296501,
+        "neutral": 0.7193211488250653,
+        "positive": 0.8841918993314982
+      },
+      "confusion": [
+        [
+          395,
+          144,
+          4
+        ],
+        [
+          132,
+          551,
+          83
+        ],
+        [
+          36,
+          553,
+          4497
+        ]
+      ]
+    },
+    {
+      "epoch": 3,
+      "phase": "finetune",
+      "train_loss": 0.47712645819276484,
+      "val_loss": 0.5469823502394443,
+      "minutes": 7.42,
+      "accuracy": 0.8553557466770915,
+      "macro_f1": 0.7290599709011785,
+      "auc_roc": 0.9465747245344431,
+      "recall": {
+        "negative": 0.8029465930018416,
+        "neutral": 0.6462140992167101,
+        "positive": 0.8924498623672827
+      },
+      "confusion": [
+        [
+          436,
+          101,
+          6
+        ],
+        [
+          182,
+          495,
+          89
+        ],
+        [
+          48,
+          499,
+          4539
+        ]
+      ]
+    },
+    {
+      "epoch": 4,
+      "phase": "finetune",
+      "train_loss": 0.35276396668761834,
+      "val_loss": 0.6533754639228496,
+      "minutes": 7.4,
+      "accuracy": 0.8578577013291634,
+      "macro_f1": 0.7349560295089161,
+      "auc_roc": 0.9453730169150093,
+      "recall": {
+        "negative": 0.7532228360957642,
+        "neutral": 0.6866840731070496,
+        "positive": 0.8948092803775068
+      },
+      "confusion": [
+        [
+          409,
+          125,
+          9
+        ],
+        [
+          148,
+          526,
+          92
+        ],
+        [
+          33,
+          502,
+          4551
+        ]
+      ]
+    }
+  ],
+  "config": {
+    "model_name": "roberta-base",
+    "max_len": 256,
+    "head_tokens": 64,
+    "batch_size": 32,
+    "eval_batch_size": 64,
+    "frozen_epochs": 1,
+    "head_lr": 0.001,
+    "finetune_epochs": 3,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "dropout": 0.1,
+    "grad_clip": 1.0,
+    "patience": 1,
+    "bf16": true,
+    "seed": 42,
+    "limit": 0
+  }
+}

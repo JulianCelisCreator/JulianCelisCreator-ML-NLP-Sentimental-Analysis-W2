@@ -1,0 +1,19 @@
+{
+  "model_name": "bert-base-uncased",
+  "max_len": 256,
+  "head_tokens": 64,
+  "batch_size": 32,
+  "eval_batch_size": 64,
+  "frozen_epochs": 1,
+  "head_lr": 0.001,
+  "finetune_epochs": 3,
+  "lr": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.1,
+  "dropout": 0.1,
+  "grad_clip": 1.0,
+  "patience": 1,
+  "bf16": true,
+  "seed": 42,
+  "limit": 0
+}

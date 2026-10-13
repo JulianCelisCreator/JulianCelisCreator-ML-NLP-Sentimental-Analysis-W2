@@ -1,0 +1,31 @@
+{
+  "split": "test",
+  "model": "bert-base-uncased",
+  "checkpoint": "bert_best.pt",
+  "best_epoch": 4,
+  "accuracy": 0.8394057857701329,
+  "macro_f1": 0.697311113244934,
+  "auc_roc": 0.9265414506802822,
+  "recall": {
+    "negative": 0.6966911764705882,
+    "neutral": 0.6109660574412533,
+    "positive": 0.8890855457227138
+  },
+  "confusion": [
+    [
+      379,
+      150,
+      15
+    ],
+    [
+      163,
+      468,
+      135
+    ],
+    [
+      36,
+      528,
+      4521
+    ]
+  ]
+}

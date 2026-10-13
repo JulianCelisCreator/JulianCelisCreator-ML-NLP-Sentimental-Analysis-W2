@@ -1,0 +1,155 @@
+{
+  "run": "20261012-183051",
+  "best_epoch": 4,
+  "best_val_macro_f1": 0.7186984151890755,
+  "minutes": 24.9,
+  "history": [
+    {
+      "epoch": 1,
+      "phase": "frozen",
+      "train_loss": 0.8264722521739226,
+      "val_loss": 0.7336933960012386,
+      "minutes": 2.92,
+      "accuracy": 0.746677091477717,
+      "macro_f1": 0.591656213460131,
+      "auc_roc": 0.8686084406246564,
+      "recall": {
+        "negative": 0.7624309392265194,
+        "neutral": 0.46736292428198434,
+        "positive": 0.787062524577271
+      },
+      "confusion": [
+        [
+          414,
+          107,
+          22
+        ],
+        [
+          251,
+          358,
+          157
+        ],
+        [
+          267,
+          816,
+          4003
+        ]
+      ]
+    },
+    {
+      "epoch": 2,
+      "phase": "finetune",
+      "train_loss": 0.6525692329031398,
+      "val_loss": 0.5627035829124272,
+      "minutes": 7.33,
+      "accuracy": 0.8223612197028929,
+      "macro_f1": 0.7004065494814747,
+      "auc_roc": 0.9324640834300114,
+      "recall": {
+        "negative": 0.7532228360957642,
+        "neutral": 0.674934725848564,
+        "positive": 0.851946519858435
+      },
+      "confusion": [
+        [
+          409,
+          127,
+          7
+        ],
+        [
+          162,
+          517,
+          87
+        ],
+        [
+          55,
+          698,
+          4333
+        ]
+      ]
+    },
+    {
+      "epoch": 3,
+      "phase": "finetune",
+      "train_loss": 0.46291431351806067,
+      "val_loss": 0.6429845564061538,
+      "minutes": 7.32,
+      "accuracy": 0.8476935105551212,
+      "macro_f1": 0.7116877501689579,
+      "auc_roc": 0.9350927731318007,
+      "recall": {
+        "negative": 0.7882136279926335,
+        "neutral": 0.5992167101827677,
+        "positive": 0.8914667715296893
+      },
+      "confusion": [
+        [
+          428,
+          106,
+          9
+        ],
+        [
+          190,
+          459,
+          117
+        ],
+        [
+          60,
+          492,
+          4534
+        ]
+      ]
+    },
+    {
+      "epoch": 4,
+      "phase": "finetune",
+      "train_loss": 0.29884029258107236,
+      "val_loss": 0.806238866588676,
+      "minutes": 7.33,
+      "accuracy": 0.8497263487099296,
+      "macro_f1": 0.7186984151890755,
+      "auc_roc": 0.9355815477411683,
+      "recall": {
+        "negative": 0.7329650092081031,
+        "neutral": 0.643603133159269,
+        "positive": 0.8932363350373574
+      },
+      "confusion": [
+        [
+          398,
+          133,
+          12
+        ],
+        [
+          146,
+          493,
+          127
+        ],
+        [
+          42,
+          501,
+          4543
+        ]
+      ]
+    }
+  ],
+  "config": {
+    "model_name": "bert-base-uncased",
+    "max_len": 256,
+    "head_tokens": 64,
+    "batch_size": 32,
+    "eval_batch_size": 64,
+    "frozen_epochs": 1,
+    "head_lr": 0.001,
+    "finetune_epochs": 3,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "dropout": 0.1,
+    "grad_clip": 1.0,
+    "patience": 1,
+    "bf16": true,
+    "seed": 42,
+    "limit": 0
+  }
+}
