@@ -33,7 +33,7 @@ Python 3.12–3.14, Poetry, and **Git LFS** (the checkpoint is stored with it):
 
 ```bash
 git lfs install            # once per machine, before cloning
-git clone git@github.com:JulianCelisCreator/ML-NLP-Sentimental-Analysis-W2.git
+git clone git@github.com:JulianCelisCreator/JulianCelisCreator-ML-NLP-Sentimental-Analysis-W2.git
 ```
 
 ```bash
