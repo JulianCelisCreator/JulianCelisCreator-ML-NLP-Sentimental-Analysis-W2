@@ -116,3 +116,9 @@ two phases are kept but shortened.
 The model was chosen on validation (RoBERTa 0.7350 vs BERT 0.7187 macro-F1) before the
 test split was opened. Reproduce: `python -m src.evaluate` here, and
 `python -m src.baselines --split test` in the Workshop #1 repository.
+
+## Related
+
+Workshop #1 (EDA, preprocessing pipeline, classical baselines):
+[JulianCelisCreator/ML-NLP-Sentimental-Analysis](https://github.com/JulianCelisCreator/ML-NLP-Sentimental-Analysis).
+The silver layer and frozen split this repository trains on are produced there.
