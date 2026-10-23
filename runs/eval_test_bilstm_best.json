@@ -1,0 +1,31 @@
+{
+  "split": "test",
+  "model": "bilstm-glove",
+  "checkpoint": "bilstm_best.pt",
+  "best_epoch": 8,
+  "accuracy": 0.7706020328381548,
+  "macro_f1": 0.6136658606069062,
+  "auc_roc": 0.8791164868268129,
+  "recall": {
+    "negative": 0.6286764705882353,
+    "neutral": 0.5496083550913838,
+    "positive": 0.8190757128810227
+  },
+  "confusion": [
+    [
+      342,
+      170,
+      32
+    ],
+    [
+      192,
+      421,
+      153
+    ],
+    [
+      131,
+      789,
+      4165
+    ]
+  ]
+}
