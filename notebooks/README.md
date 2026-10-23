@@ -1,8 +1,11 @@
 # Notebooks
 
-Report material for Workshop #2. Training itself lives in `src/train.py`, so every number
-here is read from saved artifacts (`runs/`, `checkpoints/model_best.pt`) and is
-reproducible from the command line.
+Report material for Workshop #2. Training itself lives in `src/train.py` (Transformer),
+`src/bilstm/train.py` (BiLSTM + GloVe) and `src/LSTM/train.py` (LSTM from scratch), so
+every reported number is reproducible from the command line. The notebooks read the saved
+artifacts in `runs/` and `checkpoints/`; they do not retrain.
+
+## Transformer (RoBERTa / BERT)
 
 | Notebook | Brief section it covers |
 | --- | --- |
@@ -23,3 +26,12 @@ for nb in 0*.ipynb; do poetry run jupyter nbconvert --to notebook --execute --in
 
 `04_error_analysis.ipynb` runs inference on the test split the first time (about 1 minute
 on a GPU, about 10 on a CPU) and caches it in `runs/predictions_test_model_best.csv`.
+
+## Recurrent models
+
+- `bilstm_experiments.ipynb` — the BiLSTM + GloVe model: architecture summary, learning
+  curves (loss and metrics per epoch), per-class recall, the test confusion matrix, and the
+  comparison against the Workshop #1 baselines and the Transformer. It reads the artifacts in
+  `runs/` (it does not retrain) and writes its figures to `notebooks/figures/`.
+- `machine_learning_w2.ipynb` — the LSTM trained from scratch with Keras (`src/LSTM/`):
+  architecture and learning curves.

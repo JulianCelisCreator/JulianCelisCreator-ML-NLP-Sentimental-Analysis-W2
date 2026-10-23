@@ -1,0 +1,173 @@
+{
+  "run": "bilstm-full",
+  "best_epoch": 8,
+  "best_val_macro_f1": 0.6414,
+  "history": [
+    {
+      "epoch": 1,
+      "phase": "frozen",
+      "minutes": 103.0,
+      "train_loss": 0.908,
+      "val_loss": 0.7939,
+      "accuracy": 0.7554,
+      "auc_roc": 0.8556,
+      "macro_f1": 0.5728,
+      "recall": {
+        "negative": 0.722,
+        "neutral": 0.351,
+        "positive": 0.82
+      }
+    },
+    {
+      "epoch": 2,
+      "phase": "frozen",
+      "minutes": 97.7,
+      "train_loss": 0.7782,
+      "val_loss": 0.7779,
+      "accuracy": 0.7442,
+      "auc_roc": 0.878,
+      "macro_f1": 0.5966,
+      "recall": {
+        "negative": 0.464,
+        "neutral": 0.641,
+        "positive": 0.79
+      }
+    },
+    {
+      "epoch": 3,
+      "phase": "frozen",
+      "minutes": 95.0,
+      "train_loss": 0.7332,
+      "val_loss": 0.7318,
+      "accuracy": 0.701,
+      "auc_roc": 0.8578,
+      "macro_f1": 0.552,
+      "recall": {
+        "negative": 0.82,
+        "neutral": 0.42,
+        "positive": 0.731
+      }
+    },
+    {
+      "epoch": 4,
+      "phase": "frozen",
+      "minutes": 98.6,
+      "train_loss": 0.6969,
+      "val_loss": 0.7057,
+      "accuracy": 0.7324,
+      "auc_roc": 0.8788,
+      "macro_f1": 0.5979,
+      "recall": {
+        "negative": 0.729,
+        "neutral": 0.527,
+        "positive": 0.764
+      }
+    },
+    {
+      "epoch": 5,
+      "phase": "frozen",
+      "minutes": 97.6,
+      "train_loss": 0.6687,
+      "val_loss": 0.703,
+      "accuracy": 0.734,
+      "auc_roc": 0.876,
+      "macro_f1": 0.5988,
+      "recall": {
+        "negative": 0.737,
+        "neutral": 0.526,
+        "positive": 0.765
+      }
+    },
+    {
+      "epoch": 6,
+      "phase": "frozen",
+      "minutes": 100.1,
+      "train_loss": 0.618,
+      "val_loss": 0.7025,
+      "accuracy": 0.7532,
+      "auc_roc": 0.8829,
+      "macro_f1": 0.6177,
+      "recall": {
+        "negative": 0.711,
+        "neutral": 0.559,
+        "positive": 0.787
+      }
+    },
+    {
+      "epoch": 7,
+      "phase": "finetune",
+      "minutes": 99.0,
+      "train_loss": 0.534,
+      "val_loss": 0.7358,
+      "accuracy": 0.7756,
+      "auc_roc": 0.8845,
+      "macro_f1": 0.6172,
+      "recall": {
+        "negative": 0.75,
+        "neutral": 0.473,
+        "positive": 0.824
+      }
+    },
+    {
+      "epoch": 8,
+      "phase": "finetune",
+      "minutes": 101.1,
+      "train_loss": 0.4708,
+      "val_loss": 0.759,
+      "accuracy": 0.7859,
+      "auc_roc": 0.891,
+      "macro_f1": 0.6414,
+      "recall": {
+        "negative": 0.669,
+        "neutral": 0.582,
+        "positive": 0.829
+      }
+    },
+    {
+      "epoch": 9,
+      "phase": "finetune",
+      "minutes": 102.2,
+      "train_loss": 0.3978,
+      "val_loss": 0.8004,
+      "accuracy": 0.7836,
+      "auc_roc": 0.8876,
+      "macro_f1": 0.6368,
+      "recall": {
+        "negative": 0.67,
+        "neutral": 0.57,
+        "positive": 0.828
+      }
+    },
+    {
+      "epoch": 10,
+      "phase": "finetune",
+      "minutes": 103.7,
+      "train_loss": 0.3357,
+      "val_loss": 0.9103,
+      "accuracy": 0.7651,
+      "auc_roc": 0.8839,
+      "macro_f1": 0.6299,
+      "recall": {
+        "negative": 0.654,
+        "neutral": 0.616,
+        "positive": 0.799
+      }
+    },
+    {
+      "epoch": 11,
+      "phase": "finetune",
+      "minutes": 104.3,
+      "train_loss": 0.2574,
+      "val_loss": 1.0477,
+      "accuracy": 0.7983,
+      "auc_roc": 0.8858,
+      "macro_f1": 0.6368,
+      "recall": {
+        "negative": 0.624,
+        "neutral": 0.543,
+        "positive": 0.855
+      }
+    }
+  ],
+  "note": "Reconstructed from training log (run stopped early by hand after epoch 11)."
+}
