@@ -17,8 +17,3 @@ CLAUDE.md
 
 ## Data: copied from Workshop #1 and verified by hash (see README, "Data")
 data/*
-
-## Checkpoints (~0.5 GB) go through Git LFS (.gitattributes). Only the final model is
-## pushed; alternatives such as bert_best.pt stay local to save LFS quota.
-checkpoints/*.pt
-!checkpoints/model_best.pt
