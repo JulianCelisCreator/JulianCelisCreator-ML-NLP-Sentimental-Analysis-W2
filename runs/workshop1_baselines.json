@@ -1,0 +1,19 @@
+{
+  "source": "Workshop 1 repository: `python -m src.baselines` (validation) and `python -m src.baselines --split test` (test), same frozen split",
+  "validation": {
+    "Logistic Regression": {"accuracy": 0.7844, "auc_roc": 0.8866, "macro_f1": 0.6258,
+                            "recall": {"negative": 0.713, "neutral": 0.495, "positive": 0.836}},
+    "Multinomial Naive Bayes": {"accuracy": 0.8027, "auc_roc": 0.8187, "macro_f1": 0.4318,
+                                "recall": {"negative": 0.173, "neutral": 0.086, "positive": 0.978}},
+    "Random Forest": {"accuracy": 0.7961, "auc_roc": 0.8618, "macro_f1": 0.3016,
+                      "recall": {"negative": 0.009, "neutral": 0.000, "positive": 1.000}},
+    "Majority class": {"accuracy": 0.7953, "auc_roc": 0.5000, "macro_f1": 0.2953,
+                       "recall": {"negative": 0.000, "neutral": 0.000, "positive": 1.000}}
+  },
+  "test": {
+    "Logistic Regression": {"accuracy": 0.7787, "auc_roc": 0.8879, "macro_f1": 0.6169},
+    "Multinomial Naive Bayes": {"accuracy": 0.8013, "auc_roc": 0.8286, "macro_f1": 0.4299},
+    "Random Forest": {"accuracy": 0.7962, "auc_roc": 0.8621, "macro_f1": 0.3037},
+    "Majority class": {"accuracy": 0.7952, "auc_roc": 0.5000, "macro_f1": 0.2953}
+  }
+}
